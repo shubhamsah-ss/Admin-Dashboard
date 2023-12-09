@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --bg: #151c2c;
     --bgSoft: #182237;

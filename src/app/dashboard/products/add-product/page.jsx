@@ -1,10 +1,11 @@
 import React from "react";
 import Styles from "./add-product.module.css";
+import { addProduct } from "@/app/_lib/utils/action";
 
 const AddProduct = () => {
   return (
     <div className={Styles.container}>
-      <form className={Styles.form}>
+      <form action={addProduct} className={Styles.form}>
         <input
           type="text"
           placeholder="Product title"
@@ -12,7 +13,7 @@ const AddProduct = () => {
           id="title"
           required
         />
-        <select name="cat" id="cat">
+        <select name="category" id="category">
           <option value="general">Choose a Category</option>
           <option value="kitchen">Kitchen</option>
           <option value="phone">Phone</option>

@@ -45,6 +45,9 @@ const productSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
+    category: {
+        type: String,
+    },
     desc: {
         type: String,
         required: true,
