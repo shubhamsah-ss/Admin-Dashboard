@@ -1,5 +1,3 @@
-import React from 'react'
-import Login from './login/page'
 import Link from 'next/link'
 
 const Home = () => {
